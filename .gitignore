@@ -3,7 +3,7 @@
 *.ai
 *.log
 *.pdf
-*.psd
+*psd/*.psd
 *.sublime*
 css/*.css
 node_modules/
