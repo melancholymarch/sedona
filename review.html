@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="keywords" content="melancholymarch, HTML Academy, Sedona, Седона,
+  отзывы, отзыв, отели, достопримечательности, Мост Дьявола, Слайд-парк, Гора-Колокол,
+  Красные скалы, эмоции, восторги, #VISITSEDONA">
+  <meta name="description" content="Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!">
+  <meta name="author" content="https://github.com/melancholymarch">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sedona | Отзыв</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+
+
+
+
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <a class="page-header__logo  logo" href="index.html">
+        <img src="img/logo.png" width="102" height="83" alt="City of Sedona">
+      </a>
+
+      <button class="page-header__btn  btn  btn--toggle" type="button">Меню</button>
+
+      <nav class="page-header__nav  nav  nav--opened  nav--nojs">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html">Главная</a></li>
+          <li class="nav__item"><a href="media.html">Фото и видео</a></li>
+          <li class="nav__item  nav__item--active"><a>Форма отзыва</a></li>
+          <li class="nav__item"><a href="http://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+        </ul>
+      </nav>
+
+
+
+      <section class="page-header__welcome  welcome">
+        <h1 class="welcome__title">Sedona</h1>
+      </section>
+    </div>
+  </header>
+
+
+
+
+
+  <main class="page-main">
+    <div class="page-main__wrapper">
+      <header class="page-main__intro  intro">
+        <h2 class="intro__title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="intro__descr">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+          посещенных Вами достопримечательностях
+        </p>
+      </header>
+
+
+
+      <form class="page-main__form  form" action="#" method="post">
+        <fieldset class="form__group">
+          <legend class="form__title">Представьтесь, пожалуйста:</legend>
+          <label class="form__label" for="name">Имя:</label>
+          <input class="form__field  form__field--text" type="text" name="name"
+          id="name" placeholder="Петр">
+
+          <label class="form__label" for="lastname">Фамилия:</label>
+          <input class="form__field  form__field--text" type="text" name="lastname"
+          id="lastname" placeholder="Иванов">
+
+          <label class="form__label" for="middlename">Отчество:</label>
+          <input class="form__field  form__field--text" type="text" name="middlename"
+          id="middlename" placeholder="Александрович">
+        </fieldset>
+
+
+        <fieldset class="form__group">
+          <legend class="form__title">Контактная информация:</legend>
+          <label class="form__label" for="tel">Контактный телефон:</label>
+          <input class="form__field  form__field--tel" type="tel" name="tel"
+          id="tel" placeholder="Введите телефон">
+
+          <label class="form__label" for="email">Электронная почта:</label>
+          <input class="form__field  form__field--text" type="email" name="email"
+          id="email" placeholder="Введите e-mail">
+        </fieldset>
+
+
+        <fieldset class="form__group">
+          <legend class="form__title">Ваше общее впечатление:</legend>
+          <input class="form__field  form__field--radio" type="radio" name="impression"
+          id="impression-positive" value="1" checked>
+          <label class="form__label" for="impression-positive">Скорее положительное</label>
+
+          <input class="form__field  form__field--radio" type="radio" name="impression"
+          id="impression-negative" value="2">
+          <label class="form__label" for="impression-negative">Скорее отрицательное</label>
+
+          <input class="form__field  form__field--radio" type="radio" name="impression"
+          id="impression-neutral" value="3">
+          <label class="form__label" for="impression-neutral">Затрудняюсь ответить</label>
+        </fieldset>
+
+
+        <fieldset class="form__group">
+          <legend class="form__title">Посещенные достопримечательности:</legend>
+          <input class="form__field  form__field--checkbox" type="checkbox" name="bridge"
+          id="bridge" checked>
+          <label class="form__label" for="bridge">Мост Дьявола</label>
+
+          <input class="form__field  form__field--checkbox" type="checkbox" name="park"
+          id="park" checked>
+          <label class="form__label" for="park">Слайд-парк</label>
+
+          <input class="form__field  form__field--checkbox" type="checkbox" name="mountain"
+          id="mountain">
+          <label class="form__label" for="mountain">Гора-Колокол</label>
+
+          <input class="form__field  form__field--checkbox" type="checkbox" name="cliffs"
+          id="cliffs" checked>
+          <label class="form__label" for="cliffs">Красные скалы</label>
+        </fieldset>
+
+
+        <fieldset class="form__group">
+          <legend class="form__title">Опишите свои эмоции:</legend>
+          <textarea class="form__field  form__field--textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+
+          <button class="form__btn  btn" type="submit">Отправить отзыв</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+
+
+
+
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__info">
+        <a class="page-footer__info-item" href="#">#VISITSEDONA</a>
+      </div>
+
+
+
+      <div class="page-footer__social  social">
+        <a class="social__link  social__link--tw  btn" href="#">Twitter</a>
+        <a class="social__link  social__link--fb  btn" href="#">Facebook</a>
+        <a class="social__link  social__link--yt  btn" href="#">YouTube</a>
+      </div>
+
+
+
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="#" target="_blank">
+          Разработано <span>HTML Academy</span>
+        </a>
+      </div>
+    </div>
+  </footer>
+<script src="js/app.js"></script>
+</body>
+</html>
