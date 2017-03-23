@@ -1,0 +1,87 @@
+.font(@primaryFF: @primaryFF; @primaryFS: @primaryFS; @primaryLH: @primaryLH; @primaryFW: @primaryFW){
+  font-family: @primaryFF;
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+  font-weight: @primaryFW;
+}
+
+.font(half; @primaryFS: @primaryFS; @primaryLH: @primaryLH; @primaryFW: @primaryFW){
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+  font-weight: @primaryFW;
+}
+
+.font(short; @primaryFS: @primaryFS; @primaryLH: @primaryLH;){
+  font-size: @primaryFS;
+  line-height: @primaryLH;
+}
+
+
+
+.def-ib(@align: top){
+  display: inline-block;
+  vertical-align: @align;
+}
+
+.def-list(){
+  font-size: 0;
+  li{
+    .def-ib();
+    font-size: @primaryFS;
+  }
+}
+
+.def-pseudo(@content: ""; @position: absolute; @display: block){
+  content: @content;
+  position: @position;
+  display: @display;
+}
+
+.def-pseudo(table; @content: ""; @position: static; @display: table){
+  content: @content;
+  position: @position;
+  display: @display;
+}
+
+
+
+.align(all; @top: 50%; @left: 50%; @translate: translate(-50%, -50%)){
+  top: @top;
+  left: @left;
+  transform: @translate;
+}
+
+.align(vertical; @top: 50%; @translateY: translateY(-50%)){
+  top: @top;
+  transform: @translateY;
+}
+
+.align(horizont; @left: 50%; @translateX: translateX(-50%)){
+  left: @left;
+  transform: @translateX;
+}
+
+
+
+.visually-hidden(){
+  display: none;
+}
+
+
+
+.col-1-3(){
+  float: left;
+  width: 33.33333333%;
+}
+
+.col-2-3(){
+  float: left;
+  width: 66.66666666%;
+}
+
+.clearfix(){
+  &::after{
+    .def-pseudo(table);
+    clear: both;
+  }
+}
